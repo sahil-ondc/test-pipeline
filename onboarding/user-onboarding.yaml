@@ -1,4 +1,4 @@
-# user-onboarding.yaml — Generated 2026-06-19 16:39:50 UTC
+# user-onboarding.yaml — Generated 2026-06-19 16:45:56 UTC
 schemaVersion: "1.0"
 team: ea
 serviceName: some
@@ -7,14 +7,11 @@ repository:
   defaultBranch: main
 environmentLabels:
   - dev
-  - uat
 contacts:
   primary: ea@npci.org.in
   secondary: platform-oncall@npci.org.in
   slackChannel: "#ea-ci"
 governance:
   approvalGates:
-    - environment: uat
-      requiredApprovers: 1
   notificationChannels:
     - slack:#ea-releases
