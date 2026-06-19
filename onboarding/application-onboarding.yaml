@@ -1,0 +1,16 @@
+# application-onboarding.yaml — Generated 2026-06-19 16:36:59 UTC
+schemaVersion: "1.0"
+type: java
+languageVersion: "17"
+packageManager: maven
+artifactName: some
+artifactPath: target/some.jar
+dockerfile:
+  enabled: true
+  path: Dockerfile
+deployTarget:
+  platform: kubernetes
+  namespace: default
+  cluster: prod-cluster-01
+buildCommand: mvn clean package -DskipTests
+testCommand: mvn test

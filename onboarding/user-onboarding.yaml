@@ -1,0 +1,20 @@
+# user-onboarding.yaml — Generated 2026-06-19 16:36:59 UTC
+schemaVersion: "1.0"
+team: ea
+serviceName: some
+repository:
+  url: https://github.com/sahil-ondc/test-pipeline.git
+  defaultBranch: main
+environmentLabels:
+  - dev
+  - uat
+contacts:
+  primary: ea@npci.org.in
+  secondary: platform-oncall@npci.org.in
+  slackChannel: "#ea-ci"
+governance:
+  approvalGates:
+    - environment: uat
+      requiredApprovers: 1
+  notificationChannels:
+    - slack:#ea-releases
